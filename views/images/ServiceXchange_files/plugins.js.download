@@ -1,0 +1,338 @@
+/* Document ready Function Start*/
+$(document).ready(function() {
+	
+		/* Home Page Feature Service and Best Selling Service START*/	
+		var width = $(window).width();
+		if (width > 1023) {
+			$("#brand li").on("click",function(){
+				$("#brand").removeClass("current");
+				$("#brand").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #launches, #soon, #freeSer, #favorite, #notApproved").addClass("current");
+				$("#best, #launches, #soon, #freeSer, #favorite, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#best li").on("click",function(){
+				$("#best").removeClass("current");
+				$("#best").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#brand, #launches, #soon, #freeSer, #favorite, #notApproved").addClass("current");
+				$("#brand, #launches, #soon, #freeSer, #favorite, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#launches li").on("click",function(){
+				$("#launches").removeClass("current");
+				$("#launches").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #brand, #soon, #freeSer, #favorite, #notApproved").addClass("current");
+				$("#best, #brand, #soon, #freeSer, #favorite, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#soon li").on("click",function(){
+				$("#soon").removeClass("current");
+				$("#soon").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #brand, #launches, #freeSer, #favorite, #notApproved").addClass("current");
+				$("#best, #brand, #launches, #freeSer, #favorite, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#favorite li").on("click",function(){
+				$("#favorite").removeClass("current");
+				$("#favorite").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #brand, #launches, #soon, #freeSer, #notApproved").addClass("current");
+				$("#best, #brand, #launches, #soon, #freeSer, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#notApproved li").on("click",function(){
+				$("#notApproved").removeClass("current");
+				$("#notApproved").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #brand, #launches, #soon, #favorite, #freeSer").addClass("current");
+				$("#best, #brand, #launches, #soon, #favorite, #freeSer").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$("#freeSer li").on("click",function(){
+				$("#freeSer").removeClass("current");
+				$("#freeSer").find("#shortinfo").removeClass("col-md-12").addClass("col-md-8");
+				$("#best, #brand, #launches, #soon, #favorite, #notApproved").addClass("current");
+				$("#best, #brand, #launches, #soon, #favorite, #notApproved").find("#shortinfo").removeClass("col-md-8").addClass("col-md-12");
+			});
+			$('li[id^="note_"]').click(function(){
+				$('[id^="notContent_"]').hide(); 
+				$('#notContent_'+this.id.slice(5)).show();
+			});
+		
+			$("#shortinfo li").click(function() {
+			$("#shortinfo li.selected").removeClass("selected");
+			$(this).addClass('selected');
+			
+			});
+		} 
+		
+		else {
+			$("li.selected").removeClass("selected");
+			
+			$('li[id^="note_"]').click(function(){
+				var id=$(this).attr('id');
+				var idcatss=id.substring(5); 
+					//console.log("noteid"+ idcatss);
+					var hrt=$("div[id^=notContent_"+idcatss+"] .seedetails").find("a").attr("href");
+					$(this).find("a").attr("href",hrt);
+				 
+			})
+		}
+
+	/* Home page carousel Js Start */		
+	$('.carousel[data-type="multi"] .item').each(function(){
+  		var next = $(this).next();
+  		if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+			next.children(':first-child').clone();
+			  
+	  for (var i=0;i<0;i++) {
+			next=next.next();
+			if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo($(this));
+	  }
+	});
+	$('#playButton').click(function(){$('#support').carousel('cycle');});
+    $('#pauseButton').click(function(){$('#support').carousel('pause');});
+	
+	
+	/* Search Box*/
+	$('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+	});
+	
+	/* Left SideMenu Bar */
+	$(".sideBarMenuDiv.dropdown .catdiv *").on("click", function(){
+		$(".sidebarmenu.dropdown-menu").css("display","block");
+	});
+	$('.sideBarMenuDiv.dropdown').mouseleave(function (){
+		$(".sidebarmenu.dropdown-menu").removeAttr("style");
+	});
+
+	/* Cart item Remove for Total Purchase */
+	$("ul.shopcart-popup li a").click(function(){
+	   $(this).closest("li").remove();
+	});
+	
+	/* Filter Price Button */
+	$("#filterPriceBtn").on("click", function(){
+					var pricemax = $("#price-max").val();
+					var pricemin = $("#price-min").val();
+					$("#filterPriceSet .val").text(pricemin + " to " + pricemax);
+					$("#filterPriceSet").attr("aria-expanded","false")
+					$("#filterPriceSet").parent(".inplab").removeClass("open");
+			});
+	
+			$("#filterPriceBtn1").on("click", function(){
+				var pricemax = $("#price-max1").val();
+				var pricemin = $("#price-min1").val();
+				$("#filterPriceSet1 .val").text(pricemin + " to " + pricemax);
+				$("#filterPriceSet1").attr("aria-expanded","false")
+				$("#filterPriceSet1").parent(".inplab").removeClass("open");
+			});
+	
+	
+			$(".filterMob button").on("click",function(){
+					$(this).parents(".filterMob").children(".dropdown-menu").show();
+			});
+	
+			$("#filterMobBtn").on("click", function(){
+				$(".filterMob").children(".dropdown-menu").hide();
+			});	  
+		  
+	/* Focus remove text and out show text */	
+		$('input, textarea').focusin(function() {
+			var input = $(this);
+			input.data('place-holder-text', input.attr('placeholder'));
+			input.attr('placeholder', '');
+		});
+	
+		$('input, textarea').focusout(function() {
+			var input = $(this);
+			input.attr('placeholder', input.data('place-holder-text'));
+		});
+		
+
+	var text_max = 2000;
+	$('#count_message').html(text_max + ' remaining');
+	$('#txtd').keyup(function() {
+	  var text_length = $('#txtd').val().length;
+	  var text_remaining = text_max - text_length;
+	  $('#count_message').html(text_remaining + ' remaining');
+	});
+	
+	/* Radio Button Validation for Feedback page */
+			$('#subfeed').click(function(){
+				if(!$("input[name='first']:checked").val() ||
+					!$("input[name='second']:checked").val() ||
+					!$("input[name='third']:checked").val() ||
+					!$("input[name='four']:checked").val()){
+					
+					$("#parameters th").attr("style","color:red");
+					
+				}
+				else{
+					$("#parameters th").removeAttr("style");
+					alert("Data Saved");
+				}
+			});
+	
+	/*===================== Validation for Contact Page =====================*/
+	$("#btnsubmit").click(function(){
+		var textfiled=$(".textval");
+		$(textfiled).each(function(){
+		var findvalue=$(this).val();
+			if(findvalue =="") {
+					$(this).addClass("error");	
+			}
+				else {
+					$(this).removeClass("error");	
+			}
+		});		
+		//Slect box
+		var selctbx=$(".selectval");
+		$(selctbx).each(function(){
+		var slctvalue=$(this).val();
+			if(slctvalue == "0" || slctvalue == "selected")  {
+					$(this).addClass("error");	
+			}
+				else {
+					$(this).removeClass("error");	
+			}
+		});	
+		//Mobile no
+		var mobno=$(".phonenos");
+		$(mobno).each(function(){
+		var nophone=$(this).val();
+				if((isNaN(nophone)) || (nophone=="") || (nophone.length < 1) || (nophone.length > 10)) {
+				$(this).addClass("error");	
+					alert("Phone no should be in 10 Digit only Numbers!!")
+				}				
+				else {
+					$(this).removeClass("error");	
+			}
+		});	   
+	});
+	
+	
+	/* Add or Remove Favourites icon style on offering Detail Page*/
+   /* $(".favourite").on("click", function(){
+           if($(this).hasClass("btn-yellow1")){
+                  $(this).removeClass("btn-yellow1").addClass("btn-success").attr('title','Remove from Favorites');
+           }
+           else if($(this).hasClass("btn-success")){
+               $(this).removeClass("btn-success").addClass("btn-yellow1").attr('title','Add to Favourites');
+           }
+    });*/
+
+	
+	//Order History Table
+	$(".my-table thead").not(":first").remove();
+
+
+/* Document Ready Function End*/	
+});
+
+
+/* window Load function Start*/
+//executes when complete page is fully loaded, including all frames, objects and images
+$(window).load(function() {
+     /* Onclick function disabled*/
+  $(".clickOff").find('*').attr('disabled','disabled').unbind('click').off('click').css('cursor', 'not-allowed');
+});
+/* window Load function Start*/
+
+
+function setOverFlow(myClassName,gtPixel){
+	//alert("hi")
+	var clObj = $("."+myClassName).outerHeight(true);
+    if(clObj > gtPixel){
+           $("."+myClassName).css({height:(gtPixel+20)+'px',overflow:'auto'});
+    }else{
+           $("."+myClassName).removeAttr("style");
+    }
+}
+
+/* Show select box for contact page and Character counting on text area */
+function changeInputField(thisObj,firstObj,SecdObj,otherField){
+	var myValue = $("#"+otherField).data("value");
+	 if ($("#"+thisObj).is(":checked")) {
+   		$("."+firstObj).hide();
+		$("."+SecdObj).show();
+		$("#"+otherField).val('').removeAttr("disabled");
+		
+    } else {
+        $("."+firstObj).show();
+		$("."+SecdObj).hide();
+		$("#"+otherField).val(myValue).attr("disabled", "disabled");
+    }
+}
+
+
+/* Offering Detail Price Color */
+	function priceCheckBtn(inputName,priceBoxClass){
+		if($("input[id="+inputName+"]").is(':checked')){
+				$("."+priceBoxClass).removeClass("color-red").addClass("color-green");
+			}
+		else{
+				$("."+priceBoxClass).removeClass("color-green");
+			}
+	}
+
+
+//Select All checkboxes
+function selectAllcheckboxes(modalName,id){
+	  $(".errorBox").hide();
+	  if($('#'+ id).prop('checked')){
+         $('#'+ modalName).find(".case").prop("checked", true);
+      }
+	  else{
+		  $('#'+ modalName).find(".case").prop("checked", false);
+		}
+	}
+
+function CheckBoxClick(modalName,id){
+	  $(".errorBox").hide();
+	  if($('#'+modalName+' .case').length == $('#'+modalName+' .case:checked').length) {
+          $('#'+id).prop("checked", true);
+      }else {
+      	$('#'+id).prop("checked", false);
+      }
+	}
+
+
+function testFunction(modalName) {
+	if ($('#'+modalName+' .case:checked').length > 0)
+	{
+	    $(".errorBox").hide();
+	    window.location = "order-now.html";
+	}
+	else
+	{
+		$(".errorBox").show();
+	}
+}
+
+function popupBoxOpen(formName,modalName) {
+	if ($('#'+formName+' .case:checked').length > 0)
+	{
+	    $(".errorBox").hide();
+	    $('#'+modalName).modal({
+	        show: true,
+	        backdrop: 'static'
+	    });
+	}
+	else
+	{
+		$(".errorBox").show();
+	}
+	
+}
+
+function modalPopupOpen(modalName) {
+	$('#'+modalName).modal({
+        show: true,
+        backdrop: 'static'
+    });
+}
+
+

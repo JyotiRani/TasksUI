@@ -1,0 +1,314 @@
+@media screen and (min-width: 1281px) {
+.lgpad-7{padding-top:7px;}
+
+}
+
+@media screen and (max-width: 1280px) {
+.welcome span{font-size:15px;}	
+}
+
+/* =================================================================================
+smaller than 1024 
+================================================================================= */
+@media screen and (max-width: 1024px) {
+.welcome span{font-size:15px;}
+.manage li{width:17.7%;}
+
+/* Padding/Margin */
+.mdMarB-10{margin-bottom:10px;}
+
+#footerCarsl{left:16px;right:16px;}
+.homeservices{margin-bottom:100px;}
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {   
+#footerCarsl{left:16px;right:16px;}           
+}
+
+
+/* =================================================================================
+smaller than 760 
+================================================================================= */
+@media screen and (max-width:767px) {
+.xs-margin-t-20{margin-top:20px;}
+.sidebarmenu{width:290px;background:#FAF4EC;}
+.sidebarmenu .catdiv a{height:40px;}
+.applogo .prologo {width:100%;}
+
+.homeservices .nav-tabs > li > a{padding:9px;}
+	
+/* Profile Page*/
+.proinfo .heading{margin:10px 0;}
+.proinfo .phone{padding:0;margin:0 0 10px 0;}
+.proinfo .phone span{display:inline;}
+.file-input .hidden-xs{display:inline-block !important;}
+.information .info li{padding:0 0 10px 0;}	
+
+/* Feedback Page */
+table.feedback tr th{padding:5px;}
+table.feedback tr td{padding:5px;}
+
+/* Addto Cart */
+.xs-width100{width:100%;}
+.xs-fright{float:right;}
+.lgpad-7{padding-top:7px;}
+.xs-padding-l-0{padding-left:0;}
+
+/* Order Now */
+.xs-text-l{text-align:left !important;}
+.border-l{border-left:none !important;}
+.xs-margin-l-30{margin-left:30px !important;}
+.xs-display-block{display:block;}
+
+/* Order History */
+.table-responsive1{overflow-x:auto !important;overflow-y:scroll !important;}
+
+/* Self Manage */
+.manage li{width:33%;}
+.manage li .left{float:none;}
+
+/* Header */
+.showXs{display:none;}
+
+/* Notification */
+.xs-padT-20{padding:20px 0 0 0;}
+
+/* Add to Card */
+.pos-left1{left:4px;margin:0 0 10px 0;}
+.pos-top20{top:1px;}
+.pos-left8{left:25px;}
+
+/* Listing Page Cloud */
+.cost{float:none;text-align:inherit;}
+.cost .amount{display: inline-block;text-align: inherit;margin-right:10px;}
+
+/* Profile Page */
+.mobProfile{clear:both;overflow:hidden;}
+.mobProfile .title{color:#006bb6;font-size:22px;font-weight:700;line-height:26px;margin:0;padding:0 0 5px 0;}
+.w120{width:120px;}
+
+/* Subscription Page */
+.reportrange{margin:3px 0 0 0;}
+
+/* Subscription Page */
+.padvc{display:inline-block;padding-top:15px;}
+.padvc img{clear:none;display:inline-block;margin:0;text-align:left;}
+.withOutList{padding:0 0 10px 10px;}
+.proinfo .heading{margin:0 0 10px 0;}
+
+/* Track Order */
+.my-table4 th{font-size:13px;font-weight:600;padding:5px;}
+.my-table4 td{padding:5px;}
+
+#featured .carousel-control.left .glyphicon{top:-2px;right:0px;}
+#featured .carousel-control.right .glyphicon{top:-2px;right:16px;}
+
+.loginform{padding: 15px;}
+
+}
+
+/* =================================================================================
+smaller than 428 
+================================================================================= */
+@media screen and (max-width:428px) {
+.loginbanner{background-size: contain;}
+.logout .txt b{font-size: 30px;}
+.logout .txt{font-size: 13px;}
+.btn-yellow1, .btn-blue{font-size:16px;}
+.uldiv li{width:50%;}
+.offhead{font-size:14px;}
+.trlinks .topmain-links a{font-weight:normal;}
+.tprice{width: 100%;float: none;height: inherit;}
+.applogo .prologo{height:50px;background-size:200px;}
+.applogo .comLogo {height:34px;left:215px;}
+
+.homeservices .myNew-tabs.nav-tabs>li{width:100%;text-align:left;float:none;}
+.homeservices .myNew-tabs.nav-tabs>li>a{border: 1px #ccc solid;border-radius:0;margin:0px;}
+
+}
+
+
+
+@media screen and (max-width:686px) {
+.col-xs-6.orderbtn{margin:0px;}
+.col-xs-6.orderbtn button{margin:4px 0px;}
+}
+
+
+@media screen and (max-width:991px) {
+/* Header */
+.applogo .comLogo{height:30px;left:205px;position:absolute;top:13px;}
+/* Manage */
+.manage li{width:17.7%;float:left;}
+.manage li:last-child{width:11%;}
+.manage li a.left{float:left !important;}
+
+.serbox{margin:20px 0px 0px;}
+.topmain-links .dropdown-menu.sxguideicon > li > a{padding:4px 10px 4px 25px;}
+.topother-po1{background-position:4px -85px;}
+.topother-po2{background-position:4px -115px;}
+.topother-po3{background-position:4px -139px;}
+.topother-po4{background-position:4px -166px;}
+.topother-po5{background-position:4px -195px;}
+
+/* Order Now Page */
+.width20 {width:40% !important;}
+
+
+}
+
+@media (max-width:640px) {
+	
+/* Home page*/	
+.loginform-bg {padding:0px;background:none;}
+.showXs{display:none;}
+.manage li{width:15.2%;float:left;margin:0 2% 0 0;}
+.manage li:last-child{margin:0;}
+
+.homeservices .myNew-tabs.nav-tabs>li{width:100%;text-align:left;float:none;}
+.homeservices .myNew-tabs.nav-tabs>li>a{border:1px #ccc solid;border-radius:0;margin:0px;}
+
+.homeservices .item li{min-height:145px;margin:0 1%;padding:0 0 2% 0;width:31%;}
+.homeservices .item li:first-child{margin:0 1%;padding:0 0 2% 0;}
+
+.mobRight{float:right !important; margin:0 0 0 10px;}
+
+.col-xs-left{text-align:center !important; float:none !important;}
+.footer{padding:6px 12px 6px 12px;}
+#selling .thumbnails li:first-child{padding-left:15px;}
+
+/* Subscription PAge */
+.withOutList1 li{float:left;margin:0;padding:0;width:50%;}
+.XFifty{float:none;margin:0 0 2% 0;width:98% !important;}
+
+/* Track Order PAge */
+.XsMarB0{margin-bottom:0 !important;}
+.XMar0{margin:0 !important;}
+.XPad0{margin:0 !important;}
+
+/* Order Now Page */
+.width20 {width:100% !important;}
+
+#footerCarsl{left:16px;right:16px;}
+
+}
+
+
+@media (min-width:320px) and (max-width:480px) {	
+	
+.hiddenXs{display:none;}
+.showXs{display:block;}	
+.fullXs{width:100%;}
+
+/* Widths */
+.XFifty{float:none;margin:0;width:100%;}
+
+/* Manage */
+.manage li{width:25%;float:left;margin:0 4% 5% 4%;}
+.manage li:last-child{margin:0 0 0 4%;}
+
+/* Subscription Page */
+.xsLeft{float:left !important;}
+.withOutList1 li{display:block !important;margin:0;padding:0;width:100%;}
+
+/* Service Details Page */
+.btnXs{padding:5px 8px;font-size:12px;font-weight:bold;}
+
+/* Delegation Page */
+.XsFloat{margin:0 !important;font-size:11px;padding:5px 1px;width:98px;}
+.XsNav{display:block;}
+.XsNav li a{padding:5px !important;}
+
+/* Footer */
+.footer a{margin-right:6px;}
+#footerCarsl{left:16px;right:16px;}	
+}
+
+
+/*========================================================= Media Queries for home page ========================================*/
+
+@media only screen and (max-width:992px) {
+#brand .col-md-8 .list li.seprator{display:none !important;} 
+#brand .col-md-8 .list li:nth-child(4) {display:none !important;}
+#brand .col-md-8 .list li{border:none;float:left;margin:1%;padding:0;text-align:center;width:15%;}
+#brand .col-md-8 .list li span.bor-radius{border:1px solid #e1e1e1;padding:0;margin:0;webkit-border-radius:5;moz-border-radius:5;border-radius:5;margin:0 0 5px 0;padding:15px;}
+#brand .col-md-8 .list li:first-child{margin:1% 1% 1% 0;}
+#brand .col-md-8 .list li:last-child{margin:1% 0 1% 1%;}
+
+/* Welcome Message */
+.welcome span{font-size:10px;}
+.welcome{font-size:23px;padding:26px 0 0 0;}
+
+/* Legal and Privacy Notice Page */
+.content-txt ul, .content-txt ol{margin:15px 0 15px 20px;list-style-type:inherit;}
+
+.padvc{padding-top:0;}
+.padvc img{clear:both;display:block;margin:0 auto;text-align:center;}
+
+/* Widths */
+.XFifty{float:left;margin:0 2%;width:46%;}
+.Xw100{float:left;margin:5px 20px 0 0;width:100px;}
+
+
+}
+
+
+@media only screen and (max-width:768px) {
+#brand .col-md-8 .list li.seprator{display:none !important;} 
+#brand .col-md-8 .list li:nth-child(4) {display:none !important;}
+
+/* Feature Service */
+#brand .col-md-8 .list li{border:none;float:left;margin:1% 1% 2% 1%;padding:0 0 10px 0;text-align:center;width:31%;}
+#brand .col-md-8 .list li .bor-radius{border:1px solid #e1e1e1;padding:0;margin:0;webkit-border-radius:5;moz-border-radius:5;border-radius:5;margin:0 0 5px 0;padding:15px;}
+#brand .col-md-8 .list li:nth-child(n+4){margin:1% 1% 2% 1%;padding:0 0 10px 0;}
+#brand .col-md-8 .list li:first-child{margin:1%;}
+#brand .col-md-8 .list li:last-child{margin:1%;}
+
+/* Best Selling */
+/*#best .col-md-12 .list li{display:inline;float:left;min-height:152px;margin:0 1% 2% 1%;padding:0;text-align:center;width:31%;}*/
+#brand .col-md-8 .list li{display:inline;float:left;margin:1%;text-align:center;width:31%;}
+
+/* Self Manage */
+.manage li a.left{float:none;}
+.findcom input[type="text"] {width: 80%;}
+
+/* error page*/
+.commonErrorDiv{margin:0px;}
+.errorGap40{padding-left:0px;}
+
+/* Welcome Message */
+.welcome span{font-size:10px;}
+.welcome{font-size:23px;padding:26px 0 0 0;}
+
+/* Subscription Page */
+.my-table3 table tr td:first-child, .my-table3 table tr th:first-child {width:63%;}
+.my-table3 table tr td:nth-child(2), .my-table3 table tr th:nth-child(2) {display:block;width:100%;}
+
+
+/* Service Details Page */
+.pad50{float:left;margin:0;width:49%;}
+.pad50:last-child{float:left;margin:0 0 0 2%;width:49%;}
+
+}
+
+@media only screen and (max-width:480px)  {
+#brand .col-md-8 .list li.seprator{display:none !important;} 
+#brand .col-md-8 .list li:nth-child(4) {display:none !important;}
+
+/* Feature Service */
+#brand .col-md-8 .list li{border:none;float:left;margin:1% 1% 2% 1%;padding:0 0 10px 0;text-align:center;width:48%;}
+#brand .col-md-8 .list li .bor-radius{border:1px solid #e1e1e1;padding:0;margin:0;webkit-border-radius:5;moz-border-radius:5;border-radius:5;margin:0 0 5px 0;padding:15px;}
+#brand .col-md-8 .list li:nth-child(n+4){margin:1% 1% 2% 1%;padding:0 0 10px 0;}
+
+/* Best Selling */
+#brand .col-md-12 li{display:inline;float:left;margin:0 1% 2% 1%;text-align:center;width:48%;}
+#best .col-md-12 .list li{display:inline;float:left;min-height:160px;margin:1% 1% 0 1%;text-align:center;width:48%;}
+
+.homeservices .item li{display:inline;float:left;min-height:155px;margin:0 1% 0 1%;text-align:center;width:48%;}
+
+#best .col-md-8 .list li{border:none;float:left;margin:1% 1% 2% 1%;padding:0 0 10px 0;text-align:center;width:48%;}
+#best .col-md-8 .list li .bor-radius{border:1px solid #e1e1e1;padding:0;margin:0;webkit-border-radius:5;moz-border-radius:5;border-radius:5;margin:0 0 5px 0;padding:15px;}
+#best .col-md-8 .list li:nth-child(n+4){margin:1% 1% 2% 1%;padding:0 0 10px 0;}
+
+}
